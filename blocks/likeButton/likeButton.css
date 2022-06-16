@@ -1,0 +1,14 @@
+.likeButton {
+  background-image: url(../../images/heart_icon.svg);
+  width: 22px;
+  height: 19px;
+  align-self: center;
+}
+
+.likeButton:hover {
+  background-image: url(../../images/heart_hover_icon.svg);
+}
+
+.likeButton:active {
+  background-image: url(../../images/heart_active_icon.svg);
+}
