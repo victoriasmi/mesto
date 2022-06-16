@@ -3,3 +3,11 @@
   flex-direction: row;
   gap: 18px;
 }
+
+@media (max-width: 767px) {
+  .profile_edit {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+}

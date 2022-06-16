@@ -8,5 +8,6 @@
   .profile__info {
     flex-direction: column;
     justify-content: center;
+    gap: 26px;
   }
 }

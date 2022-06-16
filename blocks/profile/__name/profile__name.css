@@ -5,7 +5,7 @@
   color: #ffffff;
   grid-area: profile__name;
   margin: 0;
-  align-self: end;
+  align-self: center;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -15,6 +15,5 @@
   .profile__name {
     font-size: 27px;
     line-height: 32.68px;
-    align-self: center;
   }
 }
