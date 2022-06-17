@@ -5,6 +5,7 @@
   align-self: center;
   width: 150px;
   height: 50px;
+  flex-shrink: 0;
 }
 
 .addButton:hover{

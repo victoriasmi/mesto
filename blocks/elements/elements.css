@@ -8,3 +8,9 @@
   margin: 0 auto;
 }
 
+@media (max-width: 879px) {
+  .elements {
+    max-width: 600px;
+  }
+}
+

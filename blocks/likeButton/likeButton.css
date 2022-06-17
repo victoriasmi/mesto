@@ -4,6 +4,7 @@
   height: 19px;
   align-self: center;
   z-index: 50;
+  flex-shrink: 0;
 }
 
 .likeButton:hover {
