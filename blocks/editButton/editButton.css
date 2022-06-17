@@ -3,7 +3,10 @@
   width: 24px;
   height: 24px;
   align-self: center;
-  background-size: contain;
+  background-size: cover;
+  border: none;
+  background-color: #000000;
+  background-repeat: no-repeat;
 }
 
 .editButton:hover {

@@ -1,0 +1,15 @@
+.popup__close {
+  width: 32px;
+  height: 32px;
+  align-self: flex-end;
+  border: none;
+  background: none;
+  position: absolute;
+  top: -30px;
+  right: -30px;
+}
+
+.popup__close:hover {
+  opacity: 0.6;
+}
+
