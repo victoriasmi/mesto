@@ -1,4 +1,4 @@
-.profile_edit {
+.profile__edit {
   display: flex;
   flex-direction: row;
   gap: 18px;
@@ -6,7 +6,7 @@
 }
 
 @media (max-width: 767px) {
-  .profile_edit {
+  .profile__edit {
     display: flex;
     flex-direction: row;
     gap: 10px;
