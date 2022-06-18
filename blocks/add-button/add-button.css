@@ -1,4 +1,4 @@
-.addButton {
+.add-button {
   background-image: url(../../images/AddButton.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -8,12 +8,13 @@
   flex-shrink: 0;
 }
 
-.addButton:hover{
+.add-button:hover{
 opacity: 0.6;
+transition: 0.2s ease-out;
 }
 
 @media (max-width: 767px) {
-  .addButton {
+  .add-button {
     background-image: url(../../images/AddButton_long.svg);
     width: 282px;
   }

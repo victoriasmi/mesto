@@ -1,5 +1,6 @@
-let editButton = document.querySelector('.editButton');
+let editButton = document.querySelector('.edit-button');
 let popup = document.querySelector('.popup');
+let popupContainer = document.querySelector('.popup__container');
 let popupCloseButton = document.querySelector('.popup__close');
 let popupSave = document.querySelector('.popup__save');
 
@@ -32,3 +33,16 @@ function formSubmitHandler(evt) {
 
 popupSave.addEventListener('click', formSubmitHandler);
 popupSave.addEventListener('submit', formSubmitHandler);
+
+
+popup.addEventListener('click',(event) => {
+  if (!event.defaultPrevented) {
+    closePopup();
+  }
+})
+
+popupContainer.addEventListener('click', (event) => {
+  event.preventDefault();
+})
+
+

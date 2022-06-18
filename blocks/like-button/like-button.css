@@ -1,16 +1,17 @@
-.likeButton {
+.like-button {
   background-image: url(../../images/heart_icon.svg);
   width: 22px;
   height: 19px;
   align-self: center;
-  z-index: 50;
   flex-shrink: 0;
 }
 
-.likeButton:hover {
-  background-image: url(../../images/heart_hover_icon.svg);
+.like-button:hover {
+  opacity: 0.5;
+  transition: 0.2s ease-out;
 }
 
-.likeButton:active {
+.like-button:active {
   background-image: url(../../images/heart_active_icon.svg);
+  transition: 0.2s ease-out;
 }
