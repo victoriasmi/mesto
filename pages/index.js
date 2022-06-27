@@ -2,11 +2,10 @@ let editButton = document.querySelector('.profile__edit-button');
 let popup = document.querySelector('.popup');
 let popupContainer = document.querySelector('.popup__container');
 let popupCloseButton = document.querySelector('.popup__close');
-let popupSave = document.querySelector('.popup__save');
 
 let formElement = document.querySelector('.popup__form');
-let nameInput = formElement.querySelector('.popup__form_info_name');
-let occupationInput = formElement.querySelector('.popup__form_info_occupation');
+let nameInput = formElement.querySelector('.popup__input_info_name');
+let occupationInput = formElement.querySelector('.popup__input_info_occupation');
 
 let profileName = document.querySelector('.profile__name');
 let profileOccupation = document.querySelector('.profile__occupation');
