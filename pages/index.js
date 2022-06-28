@@ -1,6 +1,5 @@
 let editButton = document.querySelector('.profile__edit-button');
 let popup = document.querySelector('.popup');
-let popupContainer = document.querySelector('.popup__container');
 let popupCloseButton = document.querySelector('.popup__close');
 
 let formElement = document.querySelector('.popup__form');
@@ -30,7 +29,7 @@ function formSubmitHandler(evt) {
   closePopup();
 }
 
-popupContainer.addEventListener('submit', formSubmitHandler);
+formElement.addEventListener('submit', formSubmitHandler);
 
 
 // popup.addEventListener('click',(event) => {
