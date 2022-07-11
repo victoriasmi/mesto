@@ -64,6 +64,7 @@ function createCard(element) {
   const card = elementTemplate.querySelector('.element').cloneNode(true);
   card.querySelector('.element__title').textContent = element.name;
   card.querySelector('.element__image').src = element.link;
+  card.querySelector('.element__image').alt = element.name;
 
   const likeButton = card.querySelector('.element__like-button');
   likeButton.addEventListener('click', function (evt) {
