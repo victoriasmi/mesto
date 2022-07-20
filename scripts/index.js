@@ -3,6 +3,9 @@ const popupEdit = document.querySelector('.popup_type_edit');
 const popupAdd = document.querySelector('.popup_type_add');
 const popupImg = document.querySelector('.popup_type_pic');
 const popupCloseButtons = document.querySelectorAll('.popup__close');
+const popup = document.querySelector('.popup');
+const popupAll = document.querySelectorAll('.popup');
+const popupContainerAll = document.querySelectorAll('.popup__container');
 
 const formElement = document.querySelector('.popup__form');
 const formElementEdit = document.querySelector('.popup__form_type_edit');
@@ -17,6 +20,7 @@ const addButton = document.querySelector('.profile__add-button');
 
 function openPopup(item) {
   item.classList.add('popup_opened');
+  document.addEventListener('keydown', keyHandler);
 }
 
 function editProfile() {
@@ -102,5 +106,24 @@ addButton.addEventListener('click', () => openPopup(popupAdd));
 
 formElementAdd.addEventListener('submit', submitCard);
 
- 
+//закрываем попапы при нажатии escape 
+function keyHandler(evt) { 
+  if(evt.key === "Escape"){
+    const popupOpened = document.querySelector('.popup_opened');
+    closePopup(popupOpened);
+    document.removeEventListener('keydown',keyHandler);
+  }
+}  
 
+// закрываем попапы при нажатии на оверлей
+popupAll.forEach(function(popup) {
+  popup.addEventListener('click', function(evt) {
+    closePopup(popup);
+});
+});
+
+popupContainerAll.forEach(function(container) {
+  container.addEventListener('click', function(evt) {
+    evt.stopPropagation();
+  });
+});

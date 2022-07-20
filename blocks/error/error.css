@@ -1,0 +1,22 @@
+.error {
+  display: none;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14.52px;
+  color:#FF0000;
+  line-height: 15px;
+  max-width: 358px;
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 13px;
+}
+
+.error:last-of-type {
+  margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .error {
+    max-width: 238px;
+  }
+}
